@@ -6,11 +6,16 @@ for (var i = 0; i<numberOfButtons; i++){
 
       makesound(buttonInnerHTML);
 
+      // buttonAnimation(buttonInnerHTML);
+
     });
 }
 
 document.addEventListener("keydown" , function(event){
+
   makesound(event.key);
+
+  // buttonAnimation(event.key);
 });
 
 
@@ -53,4 +58,15 @@ function makesound(key){
     default:
 
   }
+
+  // function(currentkey){
+  //
+  //   var activeButton = document.querySelector("."+ currentkey);
+  //
+  //   activeButton.classList.add("pressed");
+  //
+  //   setYImeout(function(){
+  //     activeButton.classList.remove("pressed");
+  //   }, 100);
+  // }
 }
